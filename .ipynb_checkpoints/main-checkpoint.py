@@ -33,7 +33,13 @@ class BuildModel:
     def wrangle_data(self):
         df=self.repo.read_table(table_name = self.table_name)
         df['return']=df['Close'].pct_change()*100 
-        returns = df["return"].dropna()
-        return returns
-    
+        return df["return"].dropna()
+    def fit_data(self,data,p,q):
+        model=arch_model(
+            data,
+            p=p,
+            q=q,
+            rescale=False
+        ).fit(disp=0)
+        return model
     
