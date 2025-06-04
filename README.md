@@ -11,7 +11,7 @@ To install dependencies run:
 
 If you have ever analyzed stock returns you would notice that periods of high volatility are usually followed by periods of high volatility, and periods of low volatility followed by more periods of low volatility(data exhibits volatility clustering).This common characteristic of financial markets can only be best addressed by time-varying models such as GARCH and ARCH, unlike traditional ARIMA models which assume constant variance. Below is a visualization of the squared daily returns of SCOM,  illustrating volatility clustering:
 <div align="center">
-  <img src="../Img/SCOM-squared-daily-returns.png" width="600"/>
+  <img src="Img/SCOM-squared-daily-returns.png" width="600"/>
 </div>
 
 This project therefore does the following:<br>
@@ -57,7 +57,7 @@ Garch(1,1) was the optimal model to fit into our data since all its coefficient 
 A plot of returns vs predictions shows that the model does a fairly good job at capturing volatility clustering i.e periods of high and low volatility.
 
 <div align="center">
-  <img src="../Img/returns-vs-predictions.png" width="800"/>
+  <img src="Img/returns-vs-predictions.png" width="800"/>
 </div>
 
 **Perfomance on test data**
@@ -65,7 +65,7 @@ A plot of returns vs predictions shows that the model does a fairly good job at 
 Model evaluation on the test data by perfoming Walk-Foward-Validation shows that it  is performing well on the test data and is capturing periods of high and low volatilty which is evident on 2024-04(high volatilty) and early 2024(low volatility). Note that the conditional volatility is 2 standard deviations away from its original plot.
 
 <div align="center">
-  <img src="../Img/retuns-vs-2SD-pred-vol.png" width="800"/>
+  <img src="Img/retuns-vs-2SD-pred-vol.png" width="800"/>
 </div>
 
 **10-day volatility forecast** 
