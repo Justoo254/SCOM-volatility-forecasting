@@ -1,8 +1,28 @@
-# Ignore virtual environments
-.env/
-.git
-# Ignore Python cache
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
+*$py.class
 
-# Ignore Jupyter Notebook checkpoints
+
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# Python virtual environments
+env/
+venv/
+.venv/
+
+.vscode/
+
+# macOS system files
+.DS_Store
+
+
+
+.env
+.env.*
+
+# Logs
+*.log
+

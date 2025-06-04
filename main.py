@@ -42,4 +42,3 @@ class BuildModel:
             rescale=False
         ).fit(disp=0)
         return model
-    
